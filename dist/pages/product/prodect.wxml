@@ -1,0 +1,265 @@
+<!--pages/product/prodect.wxml-->
+
+
+
+
+
+<view class="zzphoto"></view>
+
+
+
+
+
+
+
+<!-- 产品列表开始 -->
+<view class=" white_bg">
+        <view class="weui-flex ">
+            <view class="weui-flex__item ch_height"><view class="placeholder_flex white_bg">
+            <text class="text_grey">河南雷特·</text>
+            <text class="text_blue">产品中心</text>
+           </view></view>
+        </view>
+      
+          <text class="yellow_line">预应力设备一站式采购
+        </text>
+        
+
+         <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                <!-- 选项一的内容开始-->
+            
+            
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeN1f.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPe8AA.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeJht.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeGtI.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPe17d.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPet9P.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeUc8.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeajS.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPewng.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPe0BQ.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeB7j.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src=""/>
+            
+            </view></view>
+            </view>
+            
+
+
+
+            <!-- 选项一的内容结束 -->
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+            
+            
+            
+            <!-- 选项二的内容开始 -->
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkFjH.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkAud.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkP3D.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkige.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkEDA.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkVHI.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkeEt.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkmUP.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkn4f.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkKC8.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkM8S.png"/>
+             <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkQgg.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPklvQ.png"/>
+           <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPk3uj.png"/>
+           <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPk8Ds.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPVcan.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPV6Vs.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPZTl8.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+<!-- 选项二的内容结束 -->
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+             
+             
+             
+             
+             <!-- 选项三的内容开始 -->
+                
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnARx.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnFiR.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnCdJ.png"/>
+           <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnkJ1.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnPo9.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnEz6.png"/>
+           <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnZQK.png"/>
+           <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnesO.png"/>
+           <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnmLD.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnuee.png"/>
+            <view class="lianxi" bindtap="calling" >咨询报价</view>
+            </view></view>
+            </view>
+         <!-- 选项三的内容结束 -->
+                </view>
+            </view>
+        </view>
+</view>

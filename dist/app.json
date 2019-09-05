@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/shouye/shouye",
+    "pages/product/prodect",
+    "pages/us/us",
+    "pages/anli/anli",
+    "pages/question/question"
+    
+    
+    
+    ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "河南雷特预应力",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "backgroundColor": "#EDEDED"
+  },
+  "tabBar": {
+    "color": "#1296db",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "backgroundColor": "#f7f7f8",
+    "list": [
+      {
+        "pagePath":"pages/shouye/shouye",
+        "iconPath": "images/02.png",
+        "selectedIconPath": "images/01.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/product/prodect",
+        "iconPath": "images/04.png",
+        "selectedIconPath": "images/03.png",
+        "text": "产品中心"
+      },
+      {
+        "pagePath": "pages/us/us",
+        "iconPath": "images/06.png",
+        "selectedIconPath": "images/05.png",
+        "text": "企业资质"
+      },
+      {
+        "pagePath": "pages/question/question",
+        "iconPath": "images/008.png",
+        "selectedIconPath": "images/007.png",
+        "text": "雷特知识"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

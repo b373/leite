@@ -1,0 +1,316 @@
+<!--pages/shouye/shouye.wxml-->
+
+<!-- 轮播图开始 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" 
+  indicator-active-color="{{activeColor}}" height="200px">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image"  />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 轮播图结束 -->
+<!-- 小菜单栏开始 -->
+ <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">
+            <navigator url="../product/prodect" class="weui-footer__link" open-type="switchTab">锚具大全</navigator></view></view>
+            <view class="weui-flex__item"><view class="placeholder">
+            <navigator url="../question/question" class="weui-footer__link" open-type="switchTab">
+            资讯问答</navigator></view></view>
+            <view class='weui-flex__item'>
+            <view class="placeholder">
+            <navigator url='../us/us' class='weui-footer__link' open-type="switchTab">
+            走近雷特</navigator></view></view>
+            <view class="weui-flex__item">
+            <view class="placeholder">
+            <button class="kf_button" open-type="contact" session-from="weapp" size="mini">
+            <image class="kf_image" src="../../images/1008.png"></image>
+            </button></view></view>
+        </view>
+<!-- 小菜单栏结束 -->
+<!-- video开始 -->
+      <view class="section tc">
+      <video id="myVideo" src="https://video.cdnvue.com/uploads/3823834225814258743/video/blKUQCw"   controls></video>
+      <view class="btn-area">
+      <input bindblur="bindInputBlur"/>
+      </view>
+      </view> 
+<!-- video结束 -->
+<!-- 产品列表开始 -->
+<view class=" white_bg">
+        <view class="weui-flex ">
+            <view class="weui-flex__item ch_height"><view class="placeholder_flex white_bg">
+            <text class="text_grey">河南雷特·</text>
+            <text class="text_blue">产品中心</text>
+           </view></view>
+        </view>
+      
+          <text class="yellow_line">预应力设备一站式采购
+        </text>
+        
+
+         <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                <!-- 选项一的内容开始-->
+            
+            
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeN1f.png"/>
+            YM锚具
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPe8AA.png"/>
+            BM锚具
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeJht.png"/>
+            固定端P锚
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPeGtI.png"/>
+            工具锚限位板
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPe17d.png"/>
+            固定端PT锚
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPet9P.png"/>
+            矿用锚具
+            </view></view>
+            </view>
+
+
+
+            <!-- 选项一的内容结束 -->
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+            
+            
+            
+            <!-- 选项二的内容开始 -->
+            <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkFjH.png"/>
+            智能张拉设备
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkAud.png"/>
+            智能压浆设备
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkP3D.png"/>
+            预应力搅拌机
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkige.png"/>
+            穿心式千斤顶
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkEDA.png"/>
+            预应力油泵
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPkVHI.png"/>
+            前卡式千斤顶
+            </view></view>
+            </view>
+            <!-- 选项二的内容结束 -->
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+             
+             
+             
+             
+             <!-- 选项三的内容开始 -->
+                
+           <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnARx.png"/>
+            精轧螺纹钢锚具
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnFiR.png"/>
+            杆杆连接器
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnCdJ.png"/>
+            线杆连接器
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnkJ1.png"/>
+            多孔连接器
+            </view></view>
+            </view>
+             <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_ch">
+            <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnPo9.png"/>
+            线线连接器
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_ch">
+             <image class="ch_img" src="https://s2.ax1x.com/2019/09/02/nPnEz6.png"/>
+            桥梁钢绞线
+            </view></view>
+            </view>
+
+                
+                
+              
+              
+             <!-- 选项三的内容结束 -->
+                </view>
+            </view>
+        </view>
+        <view class="more">
+        <navigator  url="../product/prodect" hover-class="navigator-hover" open-type="switchTab">
+        
+        查看更多产品设备
+        
+        </navigator>
+        </view>
+</view>
+
+<!-- 产品列表结束 -->
+
+<!-- 雷特优势开始 -->
+<view class=" white_bg">
+        <view class="weui-flex ">
+            <view class="weui-flex__item ch_height"><view class="placeholder_flex white_bg">
+            <text class="text_grey">雷特·</text>
+            <text class="text_blue">给您三大优势</text>
+           </view></view>
+        </view>
+      
+        <text class="yellow_line">21年品牌厂家专注技术
+        </text>
+        
+        
+        
+       <view class="ys">
+       <view class="ys_title">
+       <icon class="ys_icon" />
+        权威资质
+      <image class="ys_img" src="../../images/ys1.jpg" />
+       </view>
+       </view>
+
+       <view class="ys">
+       <view class="ys_title">
+       <icon class="ys_icon" />
+       工程案例
+       <image class="ys_img" src="../../images/ys2.jpg" />
+       </view>
+       </view>
+
+
+       
+
+       <view class="ys">
+       <view class="ys_title">
+       <icon class="ys_icon" />
+       售后服务
+       <image class="ys_img" src="../../images/ys3.jpg" />
+       </view>
+       </view>
+</view>       
+<!-- 雷特优势结束 -->
+
+<!-- 走进雷特开始 -->
+<view class=" white_bg">
+        <view class="weui-flex ">
+            <view class="weui-flex__item ch_height"><view class="placeholder_flex white_bg">
+            <text class="text_grey">走进·</text>
+            <text class="text_blue">河南雷特厂家</text>
+           </view></view>
+        </view>
+      
+        <text class="yellow_line">免费提供预应力技术方案
+        </text>
+
+
+       <view class="ys">
+       <image class="zj_img" src="https://s2.ax1x.com/2019/09/04/nVCVXD.jpg" />
+       
+       <text class="grey_12font">　　河南雷特预应力有限公司（原开封市剑桥预应力有限公司）。成立于1998年，注册资金共有5100万元，是集预应力技术、产品硏究开发、生产加工、预应力工程施工为一体的专业企业…</text>
+       </view>
+
+
+       <view class="weui-flex">
+            <view class="weui-flex__item line_right"><view class="placeholder_zj">
+              <view class="text_blue height_blue">1998</view>
+              <view class="grey_14font height_grey">年开始生产锚具</view>
+              <view class="text_blue height_blue">40000</view>
+              <view class="grey_14font height_grey">平米的生产基地</view>
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder_zj">
+              <view class="text_blue height_blue">21</view>
+              <view class="grey_14font height_grey">年生产制造经验</view>
+              <view class="text_blue height_blue">5100</view>
+              <view class="grey_14font height_grey">万元的注册基金</view>
+            </view></view>
+        </view>
+              
+        
+</view>
+<!-- 走进雷特结束 -->
+
+<!-- 页脚开始 -->
+<view class=" white_bg">
+  <view class="footer">
+  <image class="footer_img " src="../../images/logo.png"/>
+  </view>
+  <view  style="font-size:14px;color:rgb(130, 169, 252);text-align: center;">用良心锚固世界桥梁</view>
+<view class="footer_line">
+
+ <view class="weui-flex">
+            <view class="weui-flex__item"><view class="foot_place">买锚具
+            </view></view>
+            <view class="weui-flex__item"><view class="foot_place">看案例
+            </view></view>
+            <view class="weui-flex__item"><view class="foot_place">学知识
+            </view></view>
+            <view class="weui-flex__item"><view class="foot_place">寻方案
+            </view></view>
+        </view>
+</view>
+
+  
+  <view class="weui-footer weui-footer_fixed-bottom">
+            <view class="weui-footer__links">
+                <navigator url="" class="weui-footer_link">厂家地址：河南省开封市禹王台区小苏村 </navigator>
+            </view>
+            <view class="weui-footer__text">©2018-2021 HN-NTM.COM 豫ICP备18009004号 小程序端</view>
+              
+
+</view>
+<!-- 页脚结束 -->
+
+<!-- 拨打电话按钮开始 -->
+<view bindtap='tel'>
+<image class='tel' mode='aspectFit' src='../../images/dh.png'></image>
+</view>
+<!-- 拨打电话按钮结束 -->
+
+</view>
+        
